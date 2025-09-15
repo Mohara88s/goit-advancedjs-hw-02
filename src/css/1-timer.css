@@ -1,0 +1,76 @@
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+.time-box {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.time-input {
+  box-sizing: border-box;
+  width: 250px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.time-input:focus {
+  outline: none;
+  border: 2px solid #6c8cff;
+}
+
+.time-input:disabled {
+  border-color: #c1c1c2;
+}
+
+.time-btn {
+  width: 95px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  background-color: #4e75ff;
+  color: #fff;
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+.time-btn:hover,
+.time-btn:focus {
+  background-color: #6c8cff;
+}
+
+.time-btn:disabled {
+  background-color: #c1c1c2;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.value {
+  font-size: 80px;
+}
+.label {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}

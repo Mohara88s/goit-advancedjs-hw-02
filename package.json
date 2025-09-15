@@ -1,11 +1,11 @@
 {
-  "name": "goit-advancedjs-hw-01",
+  "name": "goit-advancedjs-hw-02",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build --base=/goit-advancedjs-hw-01/",
+    "build": "vite build --base=/goit-advancedjs-hw-02/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -17,13 +17,14 @@
   "author": "Vitalii Vasylets <mohara88s@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "simplelightbox": "^2.14.3",
+    "flatpickr": "^4.6.13",
+    "izitoast": "^1.4.0",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   },
   "main": "vite.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mohara88s/goit-advancedjs-hw-01.git"
+    "url": "git+https://github.com/Mohara88s/goit-advancedjs-hw-02.git"
   }
 }

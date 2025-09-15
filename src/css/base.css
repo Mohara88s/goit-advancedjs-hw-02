@@ -26,10 +26,3 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
-main {
-  flex-grow: 1;
-}
-main:has(.back-link) {
-  text-align: center;
-}
