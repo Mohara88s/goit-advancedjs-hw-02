@@ -1,0 +1,20 @@
+.header {
+  margin-bottom: 10px;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-link {
+  display: block;
+  padding: 24px 0;
+  transition: color var(--trans-norm);
+  position: relative;
+  font-size: 20px;
+  line-height: 1.17;
+}
+.nav-link:hover {
+  color: #38ae5f;
+}
