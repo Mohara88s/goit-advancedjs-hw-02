@@ -25,6 +25,7 @@ const options = {
       userSelectedDate = null;
       startTimeBtn.disabled = true;
       iziToast.error({
+        position: 'topRight',
         message: 'Please choose a date in the future'
       });
     }
@@ -40,6 +41,7 @@ function onStartTimeBtnClick() {
   if (new Date(userSelectedDate) - Date.now() < 0) {
     userSelectedDate = null;
     iziToast.error({
+      position: 'topRight',
       message: 'Please choose a date in the future'
     });
     return
@@ -57,6 +59,7 @@ function onStartTimeBtnClick() {
       clearInterval(timerId);
       dateInput.disabled = false;
       iziToast.success({
+        position: 'topRight',
         message: 'Countdown is completed!',
       });
 
