@@ -36,17 +36,15 @@ flatpickr(dateInput, options);
 startTimeBtn.addEventListener('click', onStartTimeBtnClick);
 
 function onStartTimeBtnClick() {
+  startTimeBtn.disabled = true;
   if (new Date(userSelectedDate) - Date.now() < 0) {
     userSelectedDate = null;
-    startTimeBtn.disabled = true;
     iziToast.error({
       message: 'Please choose a date in the future'
     });
     return
   }
-
   dateInput.disabled = true;
-  startTimeBtn.disabled = true;
   const timerId = setInterval(() => {
     const timeToFinish = new Date(userSelectedDate) - Date.now();
     if (timeToFinish > 0) {
